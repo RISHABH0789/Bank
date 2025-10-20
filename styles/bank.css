@@ -1,0 +1,153 @@
+html,body{
+  width:100%;
+  height:950px;
+}
+body{
+  background:#0E0E12;
+  font-family: Times New Roman;
+  color:#fff;
+}
+#navbar {
+  background-color: #1C1C24;
+  display: flex;
+  height:40px;
+  width:10%;
+  place-self:left;
+  justify-content: center;
+  border: 2px solid #4ECCA3;
+}
+#navbar a {
+  color: #E6EDF3;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+#navbar:hover{
+  border: 2px solid #00FFC6;
+}
+#navbar a:hover {
+  color: #4ECCA3;
+}
+#container{
+  margin-top: 20px;
+  height:700px;
+  width:95%;
+  background: #1C1C24;
+  border-radius: 10px;
+  border: 2px solid #4ECCA3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  place-self:center;
+}
+.option{
+  height: 40px;
+  width:40px;
+  gap:10px;
+}
+#container label{
+  font-size: 30px;
+}
+#container button{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+  background: #0E0E12;
+  font-size:25px;
+  height:90px;
+  width:150px;
+  color:#fff;
+  font-family: Times New Roman;
+  border: 2px solid #4ECCA3;
+  border-radius: 10px;
+}
+#credits{
+  height:50px;
+  width:300px;
+  font-size:20px;
+  text-align: center;
+  border-radius: 5px;
+  border: 2px solid #4ECCA3;
+  background: #0E0E12;
+  color:#fff;
+}
+#credits{
+  height:100px;
+  width:80%;
+  font-size: 40px;
+}
+#msg{
+  color:green;
+  font-size: 20px;
+}
+#changeDisplay{
+  position:relative;
+  bottom:50px;
+  left:300px;
+  background:#0E0E12;
+  border: none;
+}
+.light {
+  background-color: #fff;
+  color: #000;
+}
+
+.light #navbar {
+  background-color: #f5f5f5;
+  border: 2px solid orange;
+}
+.light #navbar button{
+  background-color: #f5f5f5;
+}
+.light #navbar a {
+  color: #000;
+}
+.light #changeDisplay{
+   background:#fff;
+}
+.light #container {
+  background-color: #fff;
+  border: 2px solid orange;
+}
+.light h2{
+  color:#000;
+}
+.light #container input {
+  background: #fff;
+  color: #000;
+  border: 2px solid orange;
+}
+
+.light #container button {
+  background-color: #f5f5f5;
+  color: #000;
+  border: 2px solid orange;
+}
+
+.dark {
+  background-color: #0E0E12;
+  color: #fff;
+}
+@media screen and (max-width:600px){
+  html,body{
+    height:530px;
+  }
+  #container{
+    height:500px;
+    width:90%;
+  }
+  #container input{
+    width:95%;
+    height: 
+  }
+  #navbar {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    width:10%;
+    height:40px;
+    place-self:left;
+  }
+}
