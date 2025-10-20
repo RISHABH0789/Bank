@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Bank:Users Page</title>
+  <link rel="stylesheet" href="styles/users.css">
+</head>
+<body class="dark">
+  <nav id="navbar">
+      <a href="index.html"><-</a>
+    </nav>
+    <button onclick="changeDisplay()" id="changeDisplay">🌙</button>
+    <table border="1">
+      <tr>
+        <th>Users</th>
+        <th>Passwords</th>
+      </tr>
+      <tr>
+        <td>Nyx</td>
+        <td>078</td>
+      </tr>
+      <tr>
+        <td>Luna</td>
+        <td>077</td>
+      </tr>
+      <tr>
+        <td>Wit</td>
+        <td>076</td>
+      </tr>
+      <tr>
+        <td>Iron</td>
+        <td>075</td>
+      </tr>
+      <tr>
+        <td>Pulse</td>
+        <td>074</td>
+      </tr>
+    </table>
+</body>
+<script>
+function changeDisplay() {
+  const body = document.body;
+  const button = document.getElementById("changeDisplay");
+
+  body.classList.toggle("dark");
+  body.classList.toggle("light");
+
+  if (body.classList.contains("light")) {
+    button.textContent = "☀️";
+  } else {
+    button.textContent = "🌙";
+  }
+}
+
+</script>
+</html>

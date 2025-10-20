@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Bank:About Page</title>
+  <link rel="stylesheet" href="styles/about_bank.css">
+</head>
+<body class="dark">
+  <nav id="navbar">
+      <a href="index.html"><-</a>
+    </nav>
+    <button onclick="changeDisplay()" id="changeDisplay">🌙</button>
+  <div id="container">
+    <h1>About Bank</h1>
+    <p>Welcome to demo Bank!
+      This is a fully interactive front-end project designed to showcase a secure and user-friendly banking experience.
+      Our platform allows users to log in with demo accounts, explore features safely, and experience a responsive, visually appealing interface.
+      This project highlights modern web design and functionality using HTML, CSS, and JavaScript.</p>
+    <a href="https://github.com/RISHABH0789">My GitHub Page</a>
+  </div>
+</body>
+<script>
+function changeDisplay() {
+  const body = document.body;
+  const button = document.getElementById("changeDisplay");
+
+  body.classList.toggle("dark");
+  body.classList.toggle("light");
+
+  if (body.classList.contains("light")) {
+    button.textContent = "☀️";
+  } else {
+    button.textContent = "🌙";
+  }
+}
+
+</script>
+</html>
